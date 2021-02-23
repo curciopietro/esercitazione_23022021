@@ -1,7 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const currentyear = new Date().getFullYear();
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +20,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <main>
+        <h1>La mia prima applicazione in React</h1>
+      </main>
+      <footer>Copyright by Edgemony {currentyear}</footer>
     </div>
   );
 }
