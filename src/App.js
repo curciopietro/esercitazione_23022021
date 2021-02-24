@@ -1,5 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
+import consola from "consola";
+
+const myFunc = () => {
+  consola.success("Messaggio casuale");
+};
 
 function App() {
   const currentyear = new Date().getFullYear();
@@ -22,6 +27,7 @@ function App() {
       </header>
       <main>
         <h1>La mia prima applicazione in React</h1>
+        <button onClick={myFunc()}>Cliccami!</button>
       </main>
       <footer>Copyright by Edgemony {currentyear}</footer>
     </div>
