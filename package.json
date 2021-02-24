@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "npx serve build"
+    "serve": "npx serve build",
+    "analize": "source-map-explorer build/static/js/*.js"
   },
   "eslintConfig": {
     "extends": [
