@@ -1,35 +1,29 @@
-import logo from "./logo.svg";
 import "./App.css";
-import consola from "consola";
-
-const myFunc = () => {
-  consola.success("Messaggio casuale");
-};
+import Header from "./components/header";
+import Body from "./components/body";
+import Footer from "./components/footer";
 
 function App() {
-  const currentyear = new Date().getFullYear();
+  const data = {
+    name: "HappyShoes",
+    logo: "https://logoipsum.com/logo/logo-16.svg",
+    company: "SZH Inc.",
+    cover:
+      "https://images.pexels.com/photos/4123897/pexels-photo-4123897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    title: "Welcome to our brand new HappyShoes website!",
+    description:
+      "Lorem ipsum velit cillum excepteur adipisicing voluptate mollit. Laboris deserunt reprehenderit commodo id id minim non voluptate irure pariatur nulla.",
+  };
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <main>
-        <h1>La mia prima applicazione in React</h1>
-        <button onClick={myFunc()}>Cliccami!</button>
-      </main>
-      <footer>Copyright by Edgemony {currentyear}</footer>
+      <Header url={data.logo} webSiteName={data.name} />
+      <Body
+        cover={data.cover}
+        title={data.title}
+        description={data.description}
+      />
+      <Footer company={data.company} />
     </div>
   );
 }

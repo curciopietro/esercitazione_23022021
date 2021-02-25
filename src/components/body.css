@@ -1,0 +1,28 @@
+main {
+  position: relative;
+  text-align: center;
+}
+
+main > img {
+  width: 100vw;
+}
+
+main > h1,
+main > h2 {
+  position: absolute;
+  /* color: white; */
+  font-family: monospace;
+  text-shadow: 2px 2px 2px white;
+}
+
+h1 {
+  top: 40%;
+  left: 10vw;
+  width: 80vw;
+  font-size: 3rem;
+}
+
+h2 {
+  left: 10vw;
+  top: calc(40% + 60px);
+}
