@@ -11,6 +11,7 @@ function App() {
         cover={data.cover}
         title={data.title}
         description={data.description}
+        products={data.products}
       />
       <Footer company={data.company} />
     </div>
